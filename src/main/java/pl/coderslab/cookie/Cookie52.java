@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.URLEncoder;
 
 @WebServlet( "/cookie52")
 public class Cookie52 extends HttpServlet {
@@ -29,9 +30,10 @@ public class Cookie52 extends HttpServlet {
                 }
             }
         }
+        String message = "Nie odwiedziles jeszcze tej strony";
 
         if(flag){
-            response.sendRedirect("http://localhost:8080/cookie52?msg=FirstVisitCookie51");
+            response.sendRedirect("cookie51?msg=" + URLEncoder.encode(message, "UTF-8"));
         }
     }
 }
