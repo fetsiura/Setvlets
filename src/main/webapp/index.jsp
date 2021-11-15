@@ -12,8 +12,8 @@
 </head>
 <body>
 
-<%@include file="WEB-INF/header.jsp"%>
-<%@include file="WEB-INF/footer.jsp"%>
+<%@include file="WEB-INF/includes/header.jsp"%>
+<%@include file="WEB-INF/includes/footer.jsp"%>
 
 </body>
 </html>
